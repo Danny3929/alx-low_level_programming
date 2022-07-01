@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - Jokes
+ *Return: Always 0 (Success)
+ */
 
 int main(void)
 {
