@@ -4,11 +4,9 @@
 /**
  * main - Entry point
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  *
  */
-
-/* betty style doc for function main goes there */
 
 int main(void)
 {
@@ -27,4 +25,3 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	return (0);
 }
-/* wonderful*/
