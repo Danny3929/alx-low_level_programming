@@ -1,20 +1,22 @@
 #include <stdio.h>
-/**
- * main - Jokes
- *Return: Always 0 (Success)
- */
 
+/**
+ * main - print alphabet in lower and uppercase
+ *
+ *
+ * Return: (0) Success
+ */
 int main(void)
 {
-		char ch;
+	char ch;
 
-		for (ch = 'a' ; ch <= 'z' ; ch++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		putchar(ch);
 	}
-		for (ch = 'A' ; ch <= 'Z' ; ch++)
+	for (ch = 'A' ; ch <= 'Z' ; ch++)
 	{
-	putchar(ch);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
