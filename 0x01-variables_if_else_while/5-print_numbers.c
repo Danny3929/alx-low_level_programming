@@ -3,7 +3,7 @@
 /**
  * main -loving point
  *
- * Return;lokk
+ * Return:Always 0 (Success)
  */
 
 int main(void)
