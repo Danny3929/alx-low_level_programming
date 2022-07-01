@@ -7,7 +7,8 @@
 
 int main(void)
 {
-	int ch
+	char letter
+
 	for ( ch = 'a' ; ch <= 'z' ; ch++);
 	{
 		if (ch != 'e' && ch != 'q');
