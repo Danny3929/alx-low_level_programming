@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int n < 100;
+	int n =< 99;
 
 	srand(time(0));
 	n=rand() - RAND_MAX / 2;
