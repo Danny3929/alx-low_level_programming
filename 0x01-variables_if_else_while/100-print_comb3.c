@@ -20,7 +20,7 @@ int main(void)
 		if (t < 8)
 		{
 			putchar(',');
-			putchar(' ' );
+			putchar(' ');
 		}
 	}
 	}		
