@@ -24,8 +24,6 @@ int main(void)
 
 			if (h < 7)
 			{
-			if (t < 8)
-			{
 			putchar(',');
 			putchar(' ');
 			}
