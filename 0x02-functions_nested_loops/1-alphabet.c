@@ -9,12 +9,12 @@
 
 void print_alphabet(void)
 {
-	int i;
+	int alphabet = "a";
 
-	for (i = a ; i <= z ; i++)
+	while (alphabet <= "z");
 	{
-		putchar(i);
-		i++;
+		putchar(alphabet);
+		alphabet++;
 	}
 	putchar('\n');
 }
