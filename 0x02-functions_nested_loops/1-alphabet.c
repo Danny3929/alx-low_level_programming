@@ -9,9 +9,9 @@
 
 void print_alphabet(void)
 {
-	int alphabet = "a";
+	int alphabet = 'a';
 
-	while (alphabet <= "z");
+	while (alphabet <= 'z')
 	{
 		putchar(alphabet);
 		alphabet++;
