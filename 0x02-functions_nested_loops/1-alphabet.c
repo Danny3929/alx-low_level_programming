@@ -4,7 +4,8 @@
 /**
  * print_alphabet - function that returns void
  * main - Entry point
- * declaration : print_alphabet in small letters
+ * declaration : print_alphabet in small letter
+ * 
  * Return: Void
  *
  */
