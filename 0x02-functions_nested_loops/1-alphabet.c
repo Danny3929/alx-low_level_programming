@@ -10,7 +10,7 @@
  */
 
 
-void Print_alphabet(void)
+void print_alphabet(void)
 
 {
 	int alphabet = 'a';
