@@ -9,14 +9,16 @@
  *
  */
 
+
 void print_alphabet(void)
+
 {
 	int alphabet = 'a';
-
 	while (alphabet <= 'z')
 	{
-		putchar(alphabet);
+		_putchar(alphabet);
 		alphabet++;
 	}
-	putchar('\n');
+	_putchar('\n');
+
 }
