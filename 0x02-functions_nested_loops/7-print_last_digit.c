@@ -3,7 +3,7 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @c : integer
+ * @a : integer
  * Return: Always 0
  */
 
@@ -21,5 +21,6 @@ int print_last_digit(int a)
 	{
 		a = 0;
 	}
+	putchar(a + '0');
 	return (a);
 }
