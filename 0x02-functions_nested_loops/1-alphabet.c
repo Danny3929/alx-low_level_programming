@@ -10,15 +10,15 @@
  */
 
 
-void print_alphabet(void)
+void Print_alphabet(void)
 
 {
 	int alphabet = 'a';
 	while (alphabet <= 'z')
 	{
-		_putchar(alphabet);
+		putchar(alphabet);
 		alphabet++;
 	}
-	_putchar('\n');
+	putchar('\n');
 
 }
