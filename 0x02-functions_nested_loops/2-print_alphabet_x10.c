@@ -4,6 +4,7 @@
 /**
  * main - Entry point
  * Return: void
+ * print_alphabet_x10 - print alphabet ten times
  */
 
 void print_alphabet_x10(void)
