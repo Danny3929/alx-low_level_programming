@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
+ * print_alphabet - function that returns void
  * main - Entry point
+ * declaration : print_alphabet in small letters
  * Return: Void
  *
  */
