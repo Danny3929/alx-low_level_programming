@@ -20,7 +20,7 @@ void print_triangle(int size)
 		{
 			_putchar(' ');
 		}
-		for (c = a + b : c >= 1 ; c--)
+		for (c = a + b ; c >= 1 ; c--)
 		{
 			_putchar('#');
 		}
