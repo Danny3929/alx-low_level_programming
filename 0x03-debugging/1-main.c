@@ -3,7 +3,7 @@
 /**
  * main - causes an infinite loo
  * @void: integer
- * Return: 0
+ * Return: Always 0
  */
 
 int main(void)
