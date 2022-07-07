@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * Main - Entry point
- * @void: integer 
+ * main - Entry point
+ * @void: integer
  * Return: Always 0
  */
 
@@ -20,7 +20,7 @@ int main(void)
 		{
 			printf("FizzBuzz");
 		}
-		else if (i % 3 == 0 )
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
