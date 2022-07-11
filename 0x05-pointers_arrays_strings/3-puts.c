@@ -19,6 +19,6 @@ void _puts(char *str)
 			break;
 		}
 		putchar(str[c]);
-		c++
+		c++;
 	}
 }
