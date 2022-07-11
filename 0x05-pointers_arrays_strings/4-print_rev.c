@@ -12,6 +12,7 @@ void print_rev(char *s)
 	int c = 0;
 
 	while (c >= 0)
+	{
 
 		if (s[c] == '\0')
 		{
@@ -21,6 +22,7 @@ void print_rev(char *s)
 
 		for (c-- ; c >= 0 ; c--)
 			putchar(s[c]);
+	}
 		putchar('\n');
 
 }
