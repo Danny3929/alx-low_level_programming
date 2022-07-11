@@ -13,7 +13,6 @@ void print_rev(char *s)
 
 	while (c >= 0)
 	{
-
 		if (s[c] == '\0')
 		{
 			break;
@@ -21,7 +20,9 @@ void print_rev(char *s)
 		}
 
 		for (c-- ; c >= 0 ; c--)
+		{
 			putchar(s[c]);
+		}
 	}
 		putchar('\n');
 
