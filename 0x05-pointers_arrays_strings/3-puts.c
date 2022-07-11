@@ -9,6 +9,16 @@
 
 void _puts(char *str)
 {
-	printf("%s\n", *str);
-	return ('0');
+	int c = 0;
+
+	while (c >= 0)
+	{
+		if (str[count] == '\0')
+		{
+			putchar('\n');
+			break;
+		}
+		putchar(str[count]);
+		count++
+	}
 }
