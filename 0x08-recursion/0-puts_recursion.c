@@ -3,7 +3,7 @@
 
 /**
  * _puts_recursion - function that prints a string, followed by a new lilne
- * *s : character
+ * @s : character
  * Return : Always 0
  */
 
@@ -14,5 +14,6 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
