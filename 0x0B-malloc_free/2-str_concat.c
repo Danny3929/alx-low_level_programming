@@ -28,28 +28,35 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int l1, l2;
-	char *s3, *s4;
+	char *conc, *tmp;
+
+	printf("checking:%s",s1);
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	else
 		l1 = _strlen(s1);
+	printf("checking:%s\n ",s1);
+	printf("checking:%ld\n",sizeof s1);
 
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 	else
 		l2 = _strlen(s2);
+	printf("checking:%s\n",s2);
 
-	s3 = malloc(l1 + l2 + 1);
-
-	if (s3 == NULL)
+	conc = malloc(l1 + l2 + 1);
+	if (conc == NULL)
 		return (0);
-	s4 = s3;
-	while (*s1)
-		*s4++ = *s1++;
 
-	while ((*s4++ = *s2++))
+	tmp = conc;
+	while (*s1)
+		*tmp++ = *s1++;
+	printf("checking:%ld\n",sizeof s1);
+	while ((*tmp++ = *s2++));
 	;
 
-	return (s3);
+	printf("tmp:%c ",*tmp);
+
+	return (conc);
 }
