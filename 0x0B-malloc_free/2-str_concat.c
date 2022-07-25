@@ -23,7 +23,6 @@ int _strlen(char *s)
  * @s1: pointer to the first string
  * @s2: pointer to the second string
  * Return: ' ' if NULL is passed and return NULL on failure
- * Return: combination of both strings
  */
 
 char *str_concat(char *s1, char *s2)
@@ -33,22 +32,23 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		return (" ");
-	else
-		l1 = _strlen(s1);
+
+	l1 = _strlen(s1);
 
 	if (s2 == NULL)
 		return (" ");
-	else
-		l2 = _strlen(s2);
 
-	s3 = malloc(l1 +l2 + 1);
+	l2 = _strlen(s2);
+
+	s3 = malloc(l1 + l2 + 1);
 
 	if (s3 == NULL)
 		return (0);
 	s4 = s3;
 	while (*s1)
 		*s4++ = *s1++;
-	while (*s2)
-		*s4++ = *s2++;
+	while ((*s4++ = s2++));
+	;
+
 	return (s3);
 }
