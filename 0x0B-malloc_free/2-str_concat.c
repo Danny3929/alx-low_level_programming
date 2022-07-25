@@ -47,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	s4 = s3;
 	while (*s1)
 		*s4++ = *s1++;
-	while ((*s4++ = s2++));
+	while ((*s4++ = *s2++));
 	;
 
 	return (s3);
