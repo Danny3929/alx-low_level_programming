@@ -3,29 +3,52 @@
 #include "main.h"
 
 /**
- * str_concat - function that concatenates two strings
- * @s1: first string
+ * _strlen - counts the length of the string
+ * @s: string to be counted
+ * Return: the length of string
+ */
+
+int _strlen(char *s)
+{
+	unsigned int l = 0;
+
+	while (*s != '\0')
+		s++;
+	l++;
+	return (l);
+}
+
+/**
+ * str_concat - funtion that concatenates 2 strings
+ * @s1: pointer to the first string
  * @s2: pointer to the second string
- * Return: 0 if null is passed and NULL if failure
+ * Return: ' ' if NULL is passed and return NULL on failure
+ * Return: combination of both strings
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
-	char *str;
-
-	for (i = 0 ; s1[i] != '\0' ; i++)
-		s1[i];
-	for (j = 0 ; s2[j] != '\0' ; j++, i++)
-		s1[i] = s2[j];
-
-	str = malloc(sizeof (char) * i);
-
-	i = 0;
-	while (str[i] = s1[i])
-		i++;
-	return (str);
+	unsigned int l1, l2;
+	char *s3, *s4;
 
 	if (s1 == NULL)
+		return (' ');
+	else
+		l1 = _strlen(s1);
+
+	if (s2 == NULL)
+		return (' ');
+	else
+		l2 = _strlen(s2);
+
+	s3 = malloc(l1 +l2 + 1);
+
+	if (s3 == NULL)
 		return (0);
+	s4 = s3;
+	while (*s1)
+		s4++ = s1++;
+	while (*s2)
+		s4++ = s2++;
+	return (s3);
 }
