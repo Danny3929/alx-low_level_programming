@@ -30,17 +30,17 @@ char *str_concat(char *s1, char *s2)
 	unsigned int l1, l2;
 	char *conc, *tmp;
 
-	printf("checking:%s",s1);
+	printf("checking:%s", s1);
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = " ";
 	else
 		l1 = _strlen(s1);
-	printf("checking:%s\n ",s1);
-	printf("checking:%ld\n",sizeof s1);
+	printf("checking:%s\n ", s1);
+	printf("checking:%ld\n", sizeof(s1));
 
 	if (s2 == NULL)
-		s2 = "";
+		s2 = " ";
 	else
 		l2 = _strlen(s2);
 	printf("checking:%s\n",s2);
@@ -52,11 +52,11 @@ char *str_concat(char *s1, char *s2)
 	tmp = conc;
 	while (*s1)
 		*tmp++ = *s1++;
-	printf("checking:%ld\n",sizeof s1);
-	while ((*tmp++ = *s2++));
+	printf("checking:%ld\n", sizeof(s1));
+	while ((*tmp++ = *s2++))
 	;
 
-	printf("tmp:%c ",*tmp);
+	printf("tmp:%c ", *tmp);
 
 	return (conc);
 }
