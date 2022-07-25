@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 
 /**
  * _strlen - length of a string
