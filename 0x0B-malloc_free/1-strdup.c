@@ -7,7 +7,6 @@
  * @str: the pointer to the original string
  * memory for the new string is obtained with malloc
  * Return: NULL if str = NULL or if insufficient memory is available
- * Return: pointer to the duplicated string
  */
 char *_strdup(char *str)
 {
@@ -15,8 +14,9 @@ char *_strdup(char *str)
 	/**int k is for string str, int j is for string s*/
 	char *s;
 
-	if (str == NULL)
+	if (!str)
 		return (NULL);
+
 	while (*(str + k))
 		k++;
 
