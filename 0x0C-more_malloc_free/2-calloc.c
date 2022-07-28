@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _calloc -allocated memmory for nmeb element of size bytes 
+ * _calloc -allocated memmory for nmeb element of size bytes
  * @nmemb: number of element in the array
  * @size: bytes for each position in array
  * Return: pointer void
